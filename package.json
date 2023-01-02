@@ -1,0 +1,19 @@
+{
+  "name": "motion-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jureamer/motion-typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jureamer/motion-typescript/issues"
+  },
+  "homepage": "https://github.com/Jureamer/motion-typescript#readme"
+}
