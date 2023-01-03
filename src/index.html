@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motion</title>
-    <!-- <script src="./build/index.js"></script> -->
     <link rel="stylesheet" href="./index.css">
+    <script type="module" src="../dist/app.js" defer></script>
 </head>
 <body>
-    <div id="popup">
+    <!-- <div id="popup">
         <div class="popup_div_title">
             <span class="popup_span_title">타이틀</span>
             <input class="popup_input_title" placeholder="제목을 입력하세요"/>
@@ -23,32 +23,29 @@
             <input class="popup_input_body" placeholder="내용을 입력하세요"/>
         </div>
         <button type="button">등록</button>
-    </div>
+    </div> -->
     <div id="main">
-        <div id="nav">
-            <span class="nav_span_title">Motion</span>
-        </div>
-        <div id="summary">
-            <button type="button" class="summary_button_video">Video</button>
-            <button type="button" class="summary_button_picture">Picture</button>
-            <button type="button" class="summary_button_note">Note</button>
-            <button type="button" class="summary_button_todo">Todo</button>
-            <div class="summary_div_img">
-                <!-- <img src="../images/cool-background.png" class="summary_img">Motion</span> -->
+        <div id="app">
+            <div id="nav">
+                <span class="nav_span_title">Motion</span>
             </div>
-        </div>
-        <div id="block">
-            <ul class="block_ul">
-                <li class="block_ul_li"></li>
-            </ul>
-        </div>
-        <!-- <img src="../images/cool-background.png"/> -->
-        <div id="footer">
-            <span class="footer_span">
-                © Motion Inc All Rights Reserved
-            </span>
+            <div id="summary">
+                <li><button id="new-image" class="summary_button">Image</button></li>
+                <li><button id="new-video" class="summary_button">Video</button></li>
+                <li><button id="new-note"class="summary_button">Note</button></li>
+                <li><button id="new-button" class="summary_button">Todo</button></li>
+                <div class="summary_div_img">
+                    <!-- <img src="../images/cool-background.png" class="summary_img">Motion</span> -->
+                </div>
+            </div>
+            <main class="document">
+            </main>
+            <footer id="footer">
+                <span class="footer_span">
+                    © Motion Inc All Rights Reserved
+                </span>
+            </footer>
         </div>
     </div>
-    <script src="../build/components/popup.js"></script>
 </body>
 </html>
