@@ -11,7 +11,7 @@ export class BaseComponent<T extends Element> implements Component {
     constructor(htmlString: string) {
         const template = document.createElement('template');
         template.innerHTML = htmlString;
-        this.element = template.content.firstChild! as T;
+        this.element = template.content.firstElementChild! as T;
     }
 
     attachTo(parent: HTMLElement , position: InsertPosition = 'afterbegin'): void {
@@ -22,7 +22,6 @@ export class BaseComponent<T extends Element> implements Component {
         if (parent !== this.element.parentElement) {
             throw new Error('Parent Mismatched!')
         }
-
         parent.removeChild(this.element);
     }
 }

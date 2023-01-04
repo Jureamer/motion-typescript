@@ -15,22 +15,21 @@ export class PageItemComponent extends BaseComponent<HTMLElement> implements Com
                         <button class="close" onclick="() => this.closeChild">&times;</button>
                     </div>
                 </li>`)
+                console.log(this.element)
         const closeButton = this.element.querySelector('.close'); 
         closeButton?.addEventListener('click', () => {
             this.closeListener && this.closeListener();
         });
     }
-        addChild(child: Component) {
-            const container = this.element.querySelector('.page-item__body')! as HTMLElement;
-            
-            child.attachTo(container)
-        }
+
+    addChild(child: Component) {
+        const container = this.element.querySelector('.page-item__body')! as HTMLElement;
+        child.attachTo(container)
+    }
 
     setOnCloseListener(listener: OnCloseListener) {
         this.closeListener = listener;
-    }
-
-        
+    }        
 }
 
 export class PageComponent extends BaseComponent<HTMLElement> implements Composable{
