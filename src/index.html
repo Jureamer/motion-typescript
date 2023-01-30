@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <html lang="kr">
-<head>
-    
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motion</title>
-    <link rel="stylesheet" href="./index.css">
-    <script type="module" src="../dist/app.js" defer></script>
-    <script type="module" src="../dist/components/page/item/todo.js" defer></script>
-    <script type="module" src="../dist/components/page/item/note.js" defer></script>
-    <script type="module" src="../dist/components/page/item/image.js" defer></script>
-    <script type="module" src="../dist/components/page/component.js" defer></script>
-    <script type="module" src="../dist/components/page/page.js" defer></script>
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motion</title>
+  <link rel="stylesheet" href="./index.css">
+  <script type="module" src="../dist/app.js" defer></script>
+  <script type="module" src="../dist/components/page/item/todo.js" defer></script>
+  <script type="module" src="../dist/components/page/item/note.js" defer></script>
+  <script type="module" src="../dist/components/page/item/image.js" defer></script>
+  <script type="module" src="../dist/components/page/component.js" defer></script>
+  <script type="module" src="../dist/components/page/page.js" defer></script>
 
 </head>
+
 <body>
-    
-    <!-- <div id="popup">
-        <div class="popup_div_title">
-            <span class="popup_span_title">타이틀</span>
-            <input class="popup_input_title" placeholder="제목을 입력하세요"/>
+
+  <!-- <body>
+        <div class="app">
+          <header class="banner">
+            <h1 class="banner__title">Motion</h1>
+            <ul class="control-panel">
+              <li><button id="new-image" class="create-button">Image</button></li>
+              <li><button id="new-video" class="create-button">Video</button></li>
+              <li><button id="new-note" class="create-button">Note</button></li>
+              <li><button id="new-todo" class="create-button">Todo</button></li>
+            </ul>
+          </header>
+          <main class="document"></main>
+          <footer class="footer">
+            <p>© Copyright by Dream Coding Academy. All rights reserved.</p>
+          </footer>
         </div>
-        <div class="popup_div_url">
-            <span class="popup_span_url">URL</span>
-            <input class="popup_input_url" placeholder="URL을 입력하세요"/>
+      </body> -->
+  <div id="main">
+    <div id="app">
+      <div id="nav">
+        <span class="nav_span_title">Motion</span>
+      </div>
+      <div id="summary">
+        <li><button id="new-image" class="summary_button">Image</button></li>
+        <li><button id="new-video" class="summary_button">Video</button></li>
+        <li><button id="new-note" class="summary_button">Note</button></li>
+        <li><button id="new-todo" class="summary_button">Todo</button></li>
+        <div class="summary_div_img">
+          <!-- <img src="../images/cool-background.png" class="summary_img">Motion</span> -->
         </div>
-        <div class="popup_div_body">
-            <span class="popup_span_body">Body</span>
-            <input class="popup_input_body" placeholder="내용을 입력하세요"/>
-        </div>
-        <button type="button">등록</button>
-    </div> -->
-    <div id="main">
-        <div id="app">
-            <div id="nav">
-                <span class="nav_span_title">Motion</span>
-            </div>
-            <div id="summary">
-                <li><button id="new-image" class="summary_button">Image</button></li>
-                <li><button id="new-video" class="summary_button">Video</button></li>
-                <li><button id="new-note"class="summary_button">Note</button></li>
-                <li><button id="new-todo" class="summary_button">Todo</button></li>
-                <div class="summary_div_img">
-                    <!-- <img src="../images/cool-background.png" class="summary_img">Motion</span> -->
-                </div>
-            </div>
-            <main class="document">
-            </main>
-            <footer id="footer">
-                <span class="footer_span">
-                    © Motion Inc All Rights Reserved
-                </span>
-            </footer>
-        </div>
+      </div>
+      <main class="document">
+      </main>
+      <footer id="footer">
+        <span class="footer_span">
+          © Motion Inc All Rights Reserved
+        </span>
+      </footer>
     </div>
+  </div>
 </body>
+
 </html>
